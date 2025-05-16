@@ -135,6 +135,7 @@
 		// console.log('pre render:', a)
 		// a = a.replace(/^\s+/gm, function(m){ return m.replace(/\s/g, '\u00A0');}); // keep leading spaces
 		// return DOMPurify.sanitize(a)
+		console.log('orig a:',a)
 		r = DOMPurify.sanitize(md.render(a))
 		console.log('r:',r)
 		return r
